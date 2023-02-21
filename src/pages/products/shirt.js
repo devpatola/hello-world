@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Shirt() {
-    return (
-        <div>Shirt</div>
-    )
+  return <div>Shirt</div>;
 }

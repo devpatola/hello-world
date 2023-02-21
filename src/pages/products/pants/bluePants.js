@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function BluePants() {
-    return (
-        <div>BluePants</div>
-    )
+  return <div>BluePants</div>;
 }
