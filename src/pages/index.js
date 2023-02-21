@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
@@ -13,7 +14,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>Hello World Next.js</h1>
+        <h1 className={styles.title}>Hello World Next.js</h1>
+        <Image
+          src="/images/city.jpg"
+          width="400"
+          height="500"
+          alt="Cidade à noite"
+        />
       </main>
     </>
   );
