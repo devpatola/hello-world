@@ -1,5 +1,10 @@
 import React from "react";
+import styles from "../styles/Footer.module.css";
 
 export default function Footer() {
-  return <footer>Curso de Next.js &copy; 2023</footer>;
+  return (
+    <footer className={styles.footer}>
+      <p>Curso de Next.js &copy; 2023</p>
+    </footer>
+  );
 }
