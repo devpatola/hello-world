@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styles from "@/styles/Todo.module.css";
 
 // Faz a pré-renderização dos dados retornados pela API, tornando a aplicação mais performática
@@ -17,7 +18,9 @@ export default function Todos({ todos }) {
       <h1>Tarefas para fazer:</h1>
       <ul className={styles.todoList}>
         {todos.map((todo) => (
-          <li key={todo.id}>{todo.title}</li>
+          <li key={todo.id}>
+            {todo.title} - <Link href={`/todos/${todo.id}`}>Detalhes</Link>
+          </li>
         ))}
       </ul>
     </>
