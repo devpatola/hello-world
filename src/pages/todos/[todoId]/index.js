@@ -1,5 +1,4 @@
 import React from "react";
-// import { useRouter } from "next/router";
 import Link from "next/link";
 
 export async function getStaticProps(context) {
@@ -32,9 +31,6 @@ export async function getStaticPaths() {
 }
 
 export default function Todo({ todo }) {
-  // const router = useRouter();
-  // const todoId = router.query.todoId;
-
   return (
     <>
       <Link href="/todos">Voltar</Link>
