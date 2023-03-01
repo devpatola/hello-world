@@ -6,10 +6,7 @@ import styles from "@/styles/Todo.module.css";
 export async function getStaticProps() {
   const response = await fetch("https://jsonplaceholder.typicode.com/todos");
   const todos = await response.json();
-
-  return {
-    props: { todos },
-  };
+  return { props: { todos } };
 }
 
 export default function Todos({ todos }) {

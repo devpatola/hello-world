@@ -1,18 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
-export async function getStaticProps(context) {
-  const { params } = context;
-
+export async function getStaticProps({ params }) {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/todos/${params.todoId}`
   );
-
   const todo = await response.json();
-
-  return {
-    props: { todo },
-  };
+  return { props: { todo } };
 }
 
 export async function getStaticPaths() {
